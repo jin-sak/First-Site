@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> my portfolio</title>
+     
+            <link rel="stylesheet" href="c4.css">
+        
+    </head>
+    <body>
+        <nav>
+        <ul class="navbar" id="dropclick">
+            <li> <a href="https://google.com"> Home</a> </li>
+            <li> <a href="https://google.com"> About Me</a> </li> 
+            <li class="c1"> <a href="https://google.com"> Work</a>  </li>  
+            <li class="c1"> <a href="https://google.com"> Contact</a> </li>
+            
+            
+            
+            
+            <li class="dropdown"> <a href="javascript:void(0);" onclick="dropmenu()">&#9776</a></li>
+
+        </ul>
+    </nav>
+    <script>
+        function dropmenu()
+        {
+            var x = document.getElementById("dropclick");
+            if(x.className === "navbar")
+            {
+                x.className += " yik";
+            }
+            else{
+                x.className = "navbar";
+            }
+        }
+
+        </script>
+    </body>
+</html>
